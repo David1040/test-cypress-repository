@@ -1,0 +1,26 @@
+{
+  "name": "proyectocucumber4.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "runner"
+  },
+  "keywords": [
+    "cucumber"
+  ],
+  "author": "Kevin Lopez",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "cypress": "^13.17.0",
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
+   
+  }
+}

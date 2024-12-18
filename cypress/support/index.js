@@ -1,0 +1,1 @@
+import '..e2e/pageObject/log.js'
