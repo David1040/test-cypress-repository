@@ -16,6 +16,10 @@ class log {
     clickLogin() {
       cy.get('#login-button').click();
     }
+
+    verifyErrorMessage(mensajeEsperado){
+      cy.get(this.mensajeEsperado).should('be.visible').and('have.text',mensajeEsperado)
+    }
   
   }
 
