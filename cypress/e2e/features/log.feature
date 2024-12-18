@@ -4,9 +4,9 @@ Feature: Login Functionality
   To ensure it works as expected
 
   Scenario: Login successfully with valid credentials
-    Given que el usuario esta en la pagina de incio de sesion
+    Given Que el usuario esta en la pagina de incio de sesion
     
     
     When el usuario ingresa las credenciales validas 
-    Then es redireccionado a la pagina de inicio
+    Then es redireccionado a la pagina de inicio 
    

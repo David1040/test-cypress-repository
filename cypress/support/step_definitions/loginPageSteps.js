@@ -3,7 +3,7 @@ import log from "../../e2e/pageObject/Log";
 
 const users = require("../../fixtures/users.json")
 
-Given("que el usuario esta en la pagina de incio de sesion", () => {
+Given("Que el usuario esta en la pagina de incio de sesion", () => {
   log.visit('/');
 });
 
