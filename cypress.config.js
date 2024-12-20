@@ -23,7 +23,7 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
-  projectId: 'puokx2',
+  
   e2e: {
     baseUrl: "https://www.saucedemo.com/",
     chromeWebSecurity:false,
@@ -31,4 +31,5 @@ module.exports = defineConfig({
     
     setupNodeEvents,
   },
+    projectId: "6rert7"
 });

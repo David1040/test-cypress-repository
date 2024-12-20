@@ -1,5 +1,7 @@
 npx cypress run --record --key 55e67567-0a96-4f18-962f-41f89f4d8dc5
-
+npx cypress run --headed
+npx cypress run --env TAGS="@regression and not @skip"
+npx cypress run --record --key ab81bf8c-80ea-41dd-a836-f13ad366c2c1 --parallel --ci-build-id build123456
 @feature1 @login
 Feature: Inicio de sesión en SwagLabs
   Como usuario de SwagLabs
