@@ -1,4 +1,4 @@
-class log {
+class LoginPage {
   visit() {
     cy.visit("https://www.saucedemo.com/");
   }
@@ -22,4 +22,4 @@ class log {
   }
 }
 
-export default new log();
+export default new  LoginPage ();

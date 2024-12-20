@@ -1,30 +1,30 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import log from "../../e2e/pageObject/Log";
+import LoginPage from "../../e2e/pageObject/LoginPage";
 
 const users = require("../../fixtures/users.json");
 
 Given("Que el usuario se encuentra en la pagina de incio de sesion", () => {
-  log.visit("/");
+  LoginPage.visit("/");
 });
 
 When("el usuario ingresa Usuario y Password validos", () => {
   const { username, password } = users.validUser;
-  log.enterUsername(username);
-  log.enterPassword(password);
-  log.clickLogin();
+  LoginPage.enterUsername(username);
+  LoginPage.enterPassword(password);
+  LoginPage.clickLogin();
 });
 
 When("el usuario ingresa  Usuario o Password incorrectos", () => {
   const { username, password } = users.invalidUser;
-  log.enterUsername(username);
-  log.enterPassword(password);
-  log.clickLogin();
+  LoginPage.enterUsername(username);
+  LoginPage.enterPassword(password);
+  LoginPage.clickLogin();
 });
 When("el usuario ingresa con un usuario que esta bloqueado",()=>{
   const {username, password}= users.lockedUser;
-  log.enterUsername(username);
-  log.enterPassword(password);
-  log.clickLogin();
+  LoginPage.enterUsername(username);
+  LoginPage.enterPassword(password);
+  LoginPage.clickLogin();
 })
 
 Then("el sistema muestra la pagina principal con los productos", () => {

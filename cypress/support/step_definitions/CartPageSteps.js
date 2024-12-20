@@ -1,6 +1,6 @@
 import { Given, When,Then } from "@badeball/cypress-cucumber-preprocessor";
 import CartPage from "../../e2e/pageObject/CartPage";
-import log from "../../e2e/pageObject/Log";
+import LoginPage from "../../e2e/pageObject/LoginPage";
 
 // Paso para agregar un producto al carrito
 Given("Que el usuario ha agregado un producto al carrito", () => {
