@@ -23,10 +23,13 @@ async function setupNodeEvents(on, config) {
 }
 
 module.exports = defineConfig({
+  
   e2e: {
     baseUrl: "https://www.saucedemo.com/",
-    specPattern: "**/*.feature",
+    chromeWebSecurity:false,
+    specPattern: 'cypress/e2e/**/*.feature',
     
     setupNodeEvents,
   },
+    projectId: "6rert7"
 });
